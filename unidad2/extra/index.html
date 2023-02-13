@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>B. Cuando se trata de condicionales, podemos decir que el if tiene 3
+        formas</h1>
+        <div>
+        <h3>IF</h3>
+        <p>Este se representa de manera contidianda como: "Si esto pasa".</p>
+        <p>Se utiliza en cada operacion logica</p>
+        <p>Ejemplos: </p>
+        <p>1. cuando queremos escoger que comer en el desayuno, SI hay huevos, comere un omelette.</p>
+        <p>2. Al comprar en el super, SI me sobrea dinero, comprere un voleto de loteria.</p>
+        </div>
+        <div>
+            <h3>ELSE iF</h3>
+            <P>Este al igual que el anterior, reprecenta una condicion pero tambien una excepcion.</P>
+            <P>Se utiliza cuando la primera condicion no se logra cumplir</P>
+            <p>Ejemolos:</p>
+            <p>1. AL comprar una bebida, SI hay sabor naranja, lo compro. DE LO CONTRARIO comprare el de uva.</p>
+            <p>2. escoger una pelicula, SI estoy aburrido, veo rapidos y furiosos. DE LO CONTRARIO vere anime</p>
+        </div>
+        <div>
+            <h3>ELSE</h3>
+            <p>Este es el ultimo recurso de las condicionales</p>
+            <P>Aca es cuando la condicion tiene que hacer algo por defecto tecnico.</P>
+            <p>Ejemplos:</p>
+            <p>1. Al ir un restaurante, SI todavia hay desayuno comopro, si no toca almuerzo</p>
+            <p>2. Al comprar el nuevo iphone, SI todavia hay disponible, si no hay, no lo compro</p>
+        </div>
+
+    <script>
+        alert("EN ESTE DOCUMETNO CONTENGO LOS INCISOS A Y B, AL TERMINAR LAS ALERTAS MOSTRARA MI RESPUESTA A LA PREGUNTA B")
+        let palabra1 = prompt("ingresa la primera palabra");
+let palabra2 = prompt("ingresa la segunda palabra");
+let txt = "palabra mas corta en mayusculas: ";
+cuantasPalbras(palabra1, palabra2);
+
+function cuantasPalbras(a, b){
+    
+    if (a.length > b.length) {
+        alert("la primera palabra tiene mas letras");
+        alert(txt + b.toUpperCase());
+    }if(b.length > a.length){
+        alert("la segunda palabra tiene mas letras");
+        alert(txt + a.toUpperCase());
+    }else if (a.length == b.length) {
+        alert("tienen la misma cantidad de palabras");
+    }
+}
+
+const cadenaConLetrasOrdenadas = (a, b) => {
+    // Convertir a arreglo
+    const cadenaComoArregloA = a.split("");
+    const cadenaComoArregloB = b.split("");
+    // Ordenar
+    cadenaComoArregloA.sort();
+    cadenaComoArregloB.sort();
+    // Volver a convertir a cadena
+    const cadenaOrdenadaA = cadenaComoArregloA.join("");
+    const cadenaOrdenadaB = cadenaComoArregloB.join("");
+    alert("Primera palabra ordenada: " + cadenaOrdenadaA + " Segunda palabra ordenada: " + cadenaOrdenadaB);
+};
+
+cadenaConLetrasOrdenadas(palabra1, palabra2);
+    </script>
+</body>
+</html>

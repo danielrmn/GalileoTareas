@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Introduccion a la programacion de computadoras</h1>
+        
+        <h2>Actividad Extra- Unidad II</h2>
+        <p>Título de la actividad: Actividad Extra</p>
+        <p>Modalidad: Individual</p>
+        <p>Fecha última de entrega: lunes 06 de febrero a las 23:55 hrs</p>
+        <p>Valor: 05 pts</p>
+    </header>
+    <main>
+        <p>Explicacion a la solucion del problema</p>
+
+        <ul>
+            <li>Primero leamos el ejercicio completo y entendamos el problema.</li>
+            <li>Primero nos indica el ejercicio que creemos una variable en donde almacenaremos el valor numericom dicho valor reprecenta un mes del año.</li>
+            <div>
+                <p>// la variable tendra de nombre valor</p>
+                <p>// usamos prompt para obtener un valor a través de un alert.</p>
+                <p>// tambien debebos hacer que el valor que obtenga el prompt un valor numerico, usaremos parseInt (prompt por defecto tiene un valor de string).</p>
+                <p>let valor = parseInt(prompt("ingresa un numero del 1 al 12"));</p>
+            </div>
+            <li>tambien debemos crear dos varibles, una de nombre y otra de carne</li>
+            <div>
+                <p>let name = "Daniel"</p>
+                <p>let carne = 32746</p>
+            </div>
+            <li>ahora vienen las condicionales</li>
+            <div>
+                <p>// Usaramos un if para dar un rango de numeros, nos piden los numeros entre el 1 y el 12</p>
+                <p>if( valor >= 1 && valor <=12)</p>
+                <p>// Usare las sentencia switch para crear los 4 diferentes ecenarios de respuesta.</p>
+                <p>switch(valor) {
+                    case 1: case 2: case 3:
+                    alert("invierno " + nameCarne);
+                    break;
+                    case 4: case 5: case 6:
+                      alert("primavera " + nameCarne);
+                    break;
+                    case 7: case 8: case 9:
+                      alert("Verano " + nameCarne);
+                    break;
+                    case 10: case 11: case 12:
+                      alert("Otoño " + nameCarne);
+                    break;
+                    default:
+                    }
+                </p>
+                <p>// y para fnalizar el else, que sera nuestra alerta de dato invalido</p>
+                <p>else{
+                    alert("Valor invalido");
+                }</p>
+            </div>
+
+        </ul>
+    </main>
+
+    <script>
+        let valor = parseInt(prompt("ingresa un numero del 1 al 12"));
+let name = "Daniel Lopez";
+let carne = 23002425;
+let nameCarne = name + " " + carne;
+
+
+if( valor >= 1 && valor <=12) {
+    switch(valor) {
+          case 1: case 2: case 3:
+          alert("invierno " + nameCarne);
+          break;
+          case 4: case 5: case 6:
+            alert("primavera " + nameCarne);
+          break;
+          case 7: case 8: case 9:
+            alert("Verano " + nameCarne);
+          break;
+          case 10: case 11: case 12:
+            alert("Otoño " + nameCarne);
+          break;
+          default:
+    }
+}else{
+    alert("Valor invalido");
+}
+    </script>
+</body>
+</html>
